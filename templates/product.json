@@ -58,8 +58,8 @@
       },
       "block_order": [
         "vendor",
-        "title",
         "price",
+        "title",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
