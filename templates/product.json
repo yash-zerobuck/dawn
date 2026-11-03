@@ -58,12 +58,13 @@
       },
       "block_order": [
         "vendor",
-        "price",
         "title",
+        "description",
+        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        
         "share"
       ],
       "settings": {
