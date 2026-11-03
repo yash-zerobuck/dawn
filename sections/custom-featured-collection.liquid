@@ -43,7 +43,9 @@
   <div class="page-width section-{{ section.id }}-padding">
 
     <div class="custom-featured-collection__intro">
-
+      <div style="background: red; color: white; padding: 15px;">
+  DEBUG TEST - CUSTOM SECTION LOADED
+</div>  
       {% if section.settings.heading != blank %}
         {% assign heading_text = section.settings.heading | upcase %}
                 <h2 class="{{ section.settings.heading_size }}">
