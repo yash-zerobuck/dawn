@@ -43,7 +43,7 @@
 
       {% if section.settings.heading != blank %}
         <h2 class="{{ section.settings.heading_size }}">
-          {{ section.settings.heading }}
+          {{ section.settings.heading | upcase}}
         </h2>
       {% endif %}
 
