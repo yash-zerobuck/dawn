@@ -12,6 +12,12 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .related-products__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -29,7 +35,7 @@
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
-        You May Love These
+        {{ section.settings.heading }}
       </h2>
       <ul
         class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
@@ -52,6 +58,11 @@
           {%- assign skip_card_product_styles = true -%}
         {% endfor %}
       </ul>
+      <div class="related-products__button-wrapper">
+        <a href="{{ routes.all_products_collection_url }}" class="button">
+          View All Products
+        </a>
+      </div>
     {% endif %}
   </product-recommendations>
   {% if section.settings.image_shape == 'arch' %}
