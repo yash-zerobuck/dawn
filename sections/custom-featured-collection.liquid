@@ -42,10 +42,14 @@
     <div class="custom-featured-collection__intro">
 
       {% if section.settings.heading != blank %}
-        <h2 class="{{ section.settings.heading_size }}">
-          {{ section.settings.heading | upcase }}
-        </h2>
+        {% assign heading_text = section.settings.heading | upcase %}
+                <h2 class="{{ section.settings.heading_size }}">
+                    {{ heading_text }}
+                </h2>
+                <p>Original: {{ section.settings.heading }}</p>
+                <p>Uppercase: {{ section.settings.heading | upcase }}</p>
       {% endif %}
+      
 
       {% if section.settings.description != blank %}
         <div class="custom-featured-collection__description rte">
