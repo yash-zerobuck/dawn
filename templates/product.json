@@ -63,9 +63,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        
-        "share"
+        "share",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
