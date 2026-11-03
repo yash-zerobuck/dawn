@@ -7,6 +7,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  .custom-featured-collection__intro h2 {
+  text-transform: uppercase !important;
+}
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -46,8 +49,6 @@
                 <h2 class="{{ section.settings.heading_size }}">
                     {{ heading_text }}
                 </h2>
-                <p>Original: {{ section.settings.heading }}</p>
-                <p>Uppercase: {{ section.settings.heading | upcase }}</p>
       {% endif %}
       
 
